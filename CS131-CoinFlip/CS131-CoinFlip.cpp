@@ -27,7 +27,12 @@ string CoinFlip()
 #include <cstdlib>
 using namespace std;
 
-/* Define your function here */
+string CoinFlip()
+{
+	int randomValue = rand() % 2;
+	string coinSide = (randomValue == 1) ? "Heads" : "Tails";
+	return coinSide;
+}
 
 int main() {
 	// Add more variables as needed
