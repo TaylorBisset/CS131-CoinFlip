@@ -34,12 +34,16 @@ string CoinFlip()
 	return coinSide;
 }
 
-int main() {
-	// Add more variables as needed
-
-	srand(2);  // Unique seed
-
-	/* Type your code here */
+int main() 
+{
+	int rounds;
+	cin >> rounds;
+	srand(2);
+	for (int i = 1; i <= rounds; i++)
+	{
+		string coinSide = CoinFlip();
+		cout << coinSide << endl;
+	}
 
 	return 0;
 }
